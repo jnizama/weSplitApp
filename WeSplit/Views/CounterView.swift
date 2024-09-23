@@ -8,8 +8,12 @@
 import SwiftUI
 
 struct CounterView: View {
+    @State private var tapCount = 0
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        Button("Tap Count:  \(self.tapCount) ") {
+            self.tapCount =  tapCount + 1
+        }
     }
 }
 

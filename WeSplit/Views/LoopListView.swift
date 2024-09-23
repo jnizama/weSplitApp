@@ -9,7 +9,24 @@ import SwiftUI
 
 struct LoopListView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+       //NavigationView {
+           Form {
+               Section {
+                   ForEach(0..<10) { index in
+                       Text(" Row number: \(index)")
+                   }
+               }
+               
+               Section {
+                   ForEach(0..<100) {
+                       Text(" Row \($0)")
+                   }
+               }
+           }
+        /*   .navigationTitle("Loop List View").font(.system(size: 15))
+        }*/
+       
+        
     }
 }
 

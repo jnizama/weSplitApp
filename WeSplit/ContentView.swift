@@ -9,13 +9,28 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        NavigationView {
+            Form {
+                Section {
+                    NavigationLink(destination: CounterView()) {
+                        Text("Open Counter View")
+                    }
+                    NavigationLink(destination: TextBoxView()) {
+                        Text("View Data in TextBox")
+                    }
+                    NavigationLink(destination: LoopListView()) {
+                        Text("Open Loop list (foreach)")
+                    }
+                    NavigationLink(destination: PickerStudentsView()) {
+                        Text("View Picket Studentes (array data)")
+                    }
+
+                }
+                
+            }
+            .navigationTitle("SwiftUI")
         }
-        .padding()
+        
     }
 }
 

@@ -8,8 +8,16 @@
 import SwiftUI
 
 struct PickerStudentsView: View {
+    
+    let students = ["Hector", "Jorge", "Juan", "Pedro", "Sergio"]
+    @State private var selectedStudent = "Jorge"
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        Picker("Select your student", selection: $selectedStudent){
+            ForEach(0 ..< students.count ){
+                Text(self.students[$0])
+            }
+        }
     }
 }
 
