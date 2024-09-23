@@ -1,6 +1,6 @@
 Use of SwiftUI 
 
-<ol> Use of Stage </ol>
+<ul> Use of Stage </ul>
 - Loop to fill list view
 - Use of NavigationView & NavigationLink
 - Use of Picker and ForEach from a Array (Students)
