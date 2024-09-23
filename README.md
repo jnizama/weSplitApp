@@ -1,9 +1,9 @@
 Use of SwiftUI 
 
-## - Use of Stage
-## - Loop to fill list view
-## - Use of NavigationView & NavigationLink
-## - Use of Picker and ForEach from a Array (Students)
+<ol> Use of Stage </ol>
+- Loop to fill list view
+- Use of NavigationView & NavigationLink
+- Use of Picker and ForEach from a Array (Students)
 
 
 <img width="286" alt="image" src="https://github.com/user-attachments/assets/dd123ab3-9347-405f-b39b-63d64fd47d67">
